@@ -1,4 +1,4 @@
-import TopTemplate from '@/templates/top';
+import TopTemplate from '@/templates/Top';
 
 const Home = () => {
   return <TopTemplate />;
