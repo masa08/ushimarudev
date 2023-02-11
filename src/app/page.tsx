@@ -1,12 +1,7 @@
-import Image from 'next/image';
-import { Inter } from '@next/font/google';
+import TopTemplate from '@/templates/top';
 
-const inter = Inter({ subsets: ['latin'] });
+const Home = () => {
+  return <TopTemplate />;
+};
 
-export default function Home() {
-  return (
-    <main>
-      <p>home</p>
-    </main>
-  );
-}
+export default Home;

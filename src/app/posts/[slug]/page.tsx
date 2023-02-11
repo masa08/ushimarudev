@@ -1,3 +1,5 @@
-export default function Post() {
+const Post = () => {
   return <p>post example</p>;
-}
+};
+
+export default Post;

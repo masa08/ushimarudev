@@ -1,11 +1,8 @@
-import Footer from '@/features/footer/footer';
-import Header from '@/features/header/header';
+import Footer from '@/components/footer/footer';
+import Header from '@/components/header/header';
+import './globals.css';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <head />
@@ -16,4 +13,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
