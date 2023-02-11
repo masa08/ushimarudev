@@ -1,14 +1,16 @@
-import Footer from '@/components/footer/footer';
-import Header from '@/components/header/header';
+import Footer from '@/components/footer';
+import Header from '@/components/header';
 import './globals.css';
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="en">
+    <html lang="ja">
       <head />
       <body>
         <Header />
-        {children}
+        <main className="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
