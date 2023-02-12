@@ -1,20 +1,20 @@
 const Footer = () => {
   return (
-    <footer className="flex justify-between p-5 bg-white dark:bg-gray-800">
-      <p className="text-gray-500 dark:text-gray-400 py-2">ushimaru.dev</p>
+    <footer className="flex justify-between p-5 ">
+      <p className=" py-2">ushimaru.dev</p>
       <ul className="flex">
         <li className="p-2">
-          <a href="" className="text-gray-500 dark:text-gray-400">
+          <a href="" className="">
             Twitter
           </a>
         </li>
         <li className="p-2">
-          <a href="" className="text-gray-500 dark:text-gray-400">
+          <a href="" className="">
             Github
           </a>
         </li>
         <li className="p-2">
-          <a href="" className="text-gray-500 dark:text-gray-400">
+          <a href="" className="">
             LinkedIn
           </a>
         </li>

@@ -1,10 +1,10 @@
 const Header = () => {
   return (
-    <header className="flex justify-between p-5 bg-white dark:bg-gray-800">
+    <header className="flex justify-between p-5">
       <div>
         <nav>
           <h1>
-            <a href="" className="text-gray-500 dark:text-gray-400 py-2">
+            <a href="" className="py-2">
               ushimaru.dev
             </a>
           </h1>

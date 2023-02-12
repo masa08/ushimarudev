@@ -4,13 +4,14 @@ import './globals.css';
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="ja">
+    <html
+      lang="ja"
+      className="bg-white dark:bg-gray-900 text-black dark:text-white"
+    >
       <head />
       <body>
         <Header />
-        <main className="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400">
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
