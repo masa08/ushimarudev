@@ -8,7 +8,7 @@ const PostContents: React.FC<Props> = (props) => {
   const { post } = props;
 
   return (
-    <article>
+    <article className="prose dark:prose-invert mx-auto">
       <div>
         <h2 className="text-center text-3xl font-bold">
           {post.metaData.title}
@@ -18,7 +18,7 @@ const PostContents: React.FC<Props> = (props) => {
         </p>
       </div>
       <hr className="mt-4 mb-10 border-gray-200 dark:border-gray-700" />
-      <p>{post.content}</p>
+      <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </article>
   );
 };

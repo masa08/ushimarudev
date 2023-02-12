@@ -1,11 +1,16 @@
 import PostTemplate from '@/templates/Post';
 import fs from 'fs';
 import matter from 'gray-matter';
+import { remark } from 'remark';
+import html from 'remark-html';
 
 async function getPost(slug: string) {
   const post = fs.readFileSync(`src/contents/${slug}.md`, 'utf-8');
   const { data, content } = matter(post);
-  return { metaData: data, content };
+  const processedContent = await remark().use(html).process(content);
+  const contentHtml = processedContent.toString();
+
+  return { metaData: data, content: contentHtml };
 }
 
 const Post = async ({ params }: { params: { slug: string } }) => {
