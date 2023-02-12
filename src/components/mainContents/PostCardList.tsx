@@ -1,27 +1,13 @@
 import PostCard, { PostCardProps } from './PostCard';
-import fs from 'fs';
-import matter from 'gray-matter';
 import Link from 'next/link';
+import { Posts } from '@/types/post';
 
-async function getPosts() {
-  // TODO: Get data from api
-  const files = fs.readdirSync('src/contents');
+type Props = {
+  posts: Posts[];
+};
 
-  const allPosts = files.map((fileName) => {
-    const slug = fileName.replace(/\.md$/, '');
-    const fileContent = fs.readFileSync(`src/contents/${fileName}`, 'utf-8');
-
-    const { data } = matter(fileContent);
-    return { metaData: data, slug };
-  });
-  console.log(allPosts);
-
-  return allPosts;
-}
-
-const PostCardList = async () => {
-  const posts = await getPosts();
-
+const PostCardList: React.FC<Props> = (props) => {
+  const { posts } = props;
   return (
     <div>
       {posts.map((post) => {

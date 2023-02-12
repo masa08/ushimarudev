@@ -7,8 +7,14 @@ import Contacts from '@/components/sideBar/Contacts';
 import Hobby from '@/components/sideBar/Hobby';
 import Profile from '@/components/sideBar/Profile';
 import Skills from '@/components/sideBar/Skills';
+import { Posts } from '@/types/post';
 
-const TopTemplate = () => {
+type Props = {
+  posts: Posts[];
+};
+
+const TopTemplate: React.FC<Props> = (props) => {
+  const { posts } = props;
   return (
     <Container>
       <Flex>
@@ -19,7 +25,7 @@ const TopTemplate = () => {
           <Contacts />
         </SideContents>
         <MainContents>
-          <PostCardList />
+          <PostCardList posts={posts} />
         </MainContents>
       </Flex>
     </Container>
