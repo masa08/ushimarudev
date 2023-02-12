@@ -1,4 +1,3 @@
-import React from 'react';
 import PostCard, { PostCardProps } from './PostCard';
 import fs from 'fs';
 import matter from 'gray-matter';
