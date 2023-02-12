@@ -1,20 +1,18 @@
 import React from 'react';
 
-type Props = {
-  className?: string;
+export type PostCardProps = {
+  title: string;
+  createdAt: string;
+  description: string;
 };
 
-const PostCard: React.FC<Props> = (props) => {
+const PostCard: React.FC<PostCardProps> = (props) => {
+  const { title, createdAt, description } = props;
   return (
     <div className="mb-2">
-      <h3 className="text-2xl mb-2">Title of Posts</h3>
-      <p className="mb-2 text-sm">Published on Dec 11, 2022</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, modi!
-        Nostrum, veritatis temporibus, excepturi eveniet deserunt sint dolorum
-        architecto optio reiciendis nihil ratione ad animi, fugiat quibusdam ab
-        rem tenetur!
-      </p>
+      <h3 className="text-2xl mb-2">{title}</h3>
+      <p className="mb-2 text-sm">{createdAt}</p>
+      <p>{description}</p>
       <hr className="my-3 border-gray-200 dark:border-gray-700" />
     </div>
   );
