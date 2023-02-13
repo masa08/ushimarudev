@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ChangeThemeButton } from './buttons/ChangeThemeButton';
 
 const Header = () => {
   return (
@@ -10,9 +11,11 @@ const Header = () => {
               ushimaru.dev
             </Link>
           </h1>
-          {/* TODO: darkmode切り替え */}
-          {/* TODO: 言語切り替え */}
         </nav>
+      </div>
+      <div>
+        <ChangeThemeButton />
+        {/* TODO: 言語切り替え */}
       </div>
     </header>
   );
