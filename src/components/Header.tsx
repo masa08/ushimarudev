@@ -3,13 +3,11 @@ import { ChangeThemeButton } from './buttons/ChangeThemeButton';
 
 const Header = () => {
   return (
-    <header className="flex justify-between p-5">
+    <header className="flex justify-between p-5 h-16">
       <div>
         <nav>
-          <h1>
-            <Link href={`/`} className="py-2">
-              ushimaru.dev
-            </Link>
+          <h1 className="text-xl">
+            <Link href={`/`}>ushimaru.dev</Link>
           </h1>
         </nav>
       </div>

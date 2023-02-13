@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="flex justify-between p-5 ">
+    <footer className="flex justify-between p-5">
       <p className=" py-2">ushimaru.dev</p>
       <ul className="flex">
         <li className="p-2">
