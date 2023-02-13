@@ -10,6 +10,8 @@ export const ChangeThemeButton: React.FC = () => {
 
   useEffect(() => setMounted(true), []);
 
+  if (typeof window === undefined) return null;
+
   return (
     <>
       <button
