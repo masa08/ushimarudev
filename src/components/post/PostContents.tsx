@@ -10,9 +10,9 @@ const PostContents: React.FC<Props> = (props) => {
   return (
     <article className="prose dark:prose-invert mx-auto">
       <div>
-        <h2 className="text-center text-3xl font-bold">
+        <h1 className="text-center text-3xl font-bold">
           {post.metaData.title}
-        </h2>
+        </h1>
         <p className="text-right mb-2 text-sm mt-4">
           {post.metaData.createdAt} @ushimaru08
         </p>
