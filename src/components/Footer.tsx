@@ -1,22 +1,21 @@
+import { GitHub, LinkedIn, Twitter } from 'iconoir-react';
+import GithubIcon from './icons/GIthubIcon';
+import LinkedInIcon from './icons/LinkedInIcon';
+import TwitterIcon from './icons/TwitterIcon';
+
 const Footer = () => {
   return (
     <footer className="flex justify-between p-5">
       <p className=" py-2">ushimaru.dev</p>
       <ul className="flex">
         <li className="p-2">
-          <a href="" className="">
-            Twitter
-          </a>
+          <TwitterIcon />
         </li>
         <li className="p-2">
-          <a href="" className="">
-            Github
-          </a>
+          <GithubIcon />
         </li>
         <li className="p-2">
-          <a href="" className="">
-            LinkedIn
-          </a>
+          <LinkedInIcon />
         </li>
       </ul>
     </footer>
