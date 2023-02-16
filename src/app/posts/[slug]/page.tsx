@@ -4,6 +4,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import linkifyHtml from 'linkify-html';
 
 async function getPost(slug: string) {
   const post = fs.readFileSync(`src/contents/${slug}.md`, 'utf-8');
@@ -11,7 +12,7 @@ async function getPost(slug: string) {
   const processedContent = await remark().use(html).process(content);
   const contentHtml = processedContent.toString();
 
-  return { metaData: data, content: contentHtml };
+  return { metaData: data, content: linkifyHtml(contentHtml) };
 }
 
 export async function generateStaticParams() {
