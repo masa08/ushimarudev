@@ -2,8 +2,8 @@ import TopTemplate from '@/templates/Top';
 import fs from 'fs';
 import matter from 'gray-matter';
 
+// TODO: Get data from api
 export async function getPosts() {
-  // TODO: Get data from api
   const files = fs.readdirSync('src/contents');
 
   const allPosts = files.map((fileName) => {
@@ -12,6 +12,10 @@ export async function getPosts() {
 
     const { data } = matter(fileContent);
     return { metaData: data, slug };
+  });
+
+  allPosts.sort(function (a, b) {
+    return a.metaData.createdAt < b.metaData.createdAt ? 1 : -1;
   });
 
   return allPosts;
