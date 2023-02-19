@@ -8,7 +8,7 @@ const PostContents: React.FC<Props> = (props) => {
   const { post } = props;
 
   return (
-    <article className="prose dark:prose-invert mx-auto">
+    <article className="prose dark:prose-invert mx-auto break-all">
       <div>
         <h1 className="text-center text-3xl font-bold">
           {post.metaData.title}
