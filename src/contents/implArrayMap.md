@@ -46,20 +46,20 @@ Array.prototype.myMap = function (callbackFn, thisArg) {
 };
 ```
 
-Object.hasOwn というメソッドを初めて知ったが、以下の用途で使われているみたい。
+Object.hasOwn についての説明は以下。
 
 > 配列のインデックスが存在するかどうかを調べる。Array の要素は直接のプロパティとして定義されているので、hasOwn() メソッドで特定のインデックスが存在するかどうかを調べることができます。
 
-https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn#%E9%85%8D%E5%88%97%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%87%E3%83%83%E3%82%AF%E3%82%B9%E3%81%8C%E5%AD%98%E5%9C%A8%E3%81%99%E3%82%8B%E3%81%8B%E3%81%A9%E3%81%86%E3%81%8B%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B
+https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn
 
 例えば、元の配列が[1,2,,4]とかの場合に、callback の実行を無視するための判定として、使用している。
 
-また Function.prototype.call に関しても普段あまり見かけないメソッド。
+Function.prototype.call に関しても普段あまり見かけないメソッド。
 
 > call() はあるオブジェクトに所属する関数やメソッドを、別なオブジェクトに割り当てて呼び出すことができます。
 
 以下の部分で引数に渡しているものは、thisArg が実行時に this として扱われる値、それ以外は map の interface で必要な値。
 
-> callbackFn.call(thisArg, this[k], k, this);
+> callbackFn.call(thisArg, this[k], k, this)
 
 https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Function/call
