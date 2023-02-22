@@ -18,7 +18,7 @@ Link: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 
 ## Explanation
 
-### DFS
+### DFS way
 
 We can use a DFS way to get the answer.
 We use a recursive approach to calculate. The base case is then the root is None.
@@ -26,7 +26,7 @@ We use a recursive approach to calculate. The base case is then the root is None
 We calculate the maximum depth of the left and the right subtrees and return that maximum value plus one.
 The value represents the depth of the target tree.
 
-## BFS way
+### BFS way
 
 We want to know the depth of the Binary Tree. We can use a BFS way to get the answer.
 We use an array to store root information. And then traverse the array until it is empty using a while loop.
