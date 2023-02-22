@@ -81,3 +81,7 @@ function promiseAll(arr) {
   });
 }
 ```
+
+## 参考
+
+https://www.greatfrontend.com/questions/javascript/promise-all
