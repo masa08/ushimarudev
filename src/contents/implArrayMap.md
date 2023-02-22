@@ -63,3 +63,7 @@ Function.prototype.call に関しても普段あまり見かけないメソッ�
 > callbackFn.call(thisArg, this[k], k, this)
 
 https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Function/call
+
+## 参考
+
+https://www.greatfrontend.com/questions/javascript/array-map
