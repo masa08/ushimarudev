@@ -5,7 +5,7 @@ updatedAt: '2023-02-21'
 description: 'Array.prototype.mapを実装した際のメモ'
 ---
 
-## Array.map とは
+## Array.prototype.map とは
 
 配列に対して、引数で渡した callback を各要素に適用し、新しい配列を返すメソッド。MDN の説明は以下。
 
