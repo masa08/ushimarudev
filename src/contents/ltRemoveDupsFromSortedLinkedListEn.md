@@ -1,8 +1,8 @@
 ---
-title: 'InterView Preparation - Remove Duplicates from Sorted List'
+title: 'Leetcode - Remove Duplicates from Sorted List'
 createdAt: '2023-03-02'
 updatedAt: '2023-03-02'
-description: 'InterView Preparation - Remove Duplicates from Sorted List'
+description: 'Leetcode - Remove Duplicates from Sorted List'
 ---
 
 ## Motivation

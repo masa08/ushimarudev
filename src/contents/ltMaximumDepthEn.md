@@ -1,8 +1,8 @@
 ---
-title: 'InterView Preparation - Maximum Depth of Binary Tree'
+title: 'Leetcode - Maximum Depth of Binary Tree'
 createdAt: '2023-02-22'
 updatedAt: '2023-02-22'
-description: 'InterView Preparation - Maximum Depth of Binary Tree'
+description: 'Leetcode - Maximum Depth of Binary Tree'
 ---
 
 ## Motivation
