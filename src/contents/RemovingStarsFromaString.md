@@ -1,7 +1,7 @@
 ---
 title: 'Leetcode - Removing Stars From a String'
-createdAt: '2023-09-04'
-updatedAt: '2023-09-04'
+createdAt: '2023-09-08'
+updatedAt: '2023-09-08'
 description: 'Leetcode - Removing Stars From a String'
 ---
 

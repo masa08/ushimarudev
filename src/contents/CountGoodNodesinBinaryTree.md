@@ -1,7 +1,7 @@
 ---
 title: 'Leetcode - Count Good Nodes in Binary Tree'
-createdAt: '2023-09-04'
-updatedAt: '2023-09-04'
+createdAt: '2023-09-08'
+updatedAt: '2023-09-08'
 description: 'Leetcode - Count Good Nodes in Binary Tree'
 ---
 
