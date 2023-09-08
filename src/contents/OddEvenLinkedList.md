@@ -9,7 +9,7 @@ description: 'Leetcode - Odd Even Linked List'
 
 以下の問題を解いていく。O(1) Space で問題を解く必要があるので、two pointers を用いてコードを書いていく。
 
-https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
+https://leetcode.com/problems/odd-even-linked-list/
 
 ## Explanation
 
