@@ -1,7 +1,7 @@
 ---
 title: 'Leetcode - Longest Common Subsequence'
-createdAt: '2023-09-25'
-updatedAt: '2023-09-25'
+createdAt: '2023-09-29'
+updatedAt: '2023-09-29'
 description: 'Leetcode - Longest Common Subsequence'
 ---
 
