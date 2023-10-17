@@ -1,7 +1,7 @@
 ---
 title: 'Leetcode - Max Consecutive Ones III'
-createdAt: '2023-10-16'
-updatedAt: '2023-10-16'
+createdAt: '2023-10-17'
+updatedAt: '2023-10-17'
 description: 'Leetcode - Max Consecutive Ones III'
 ---
 
