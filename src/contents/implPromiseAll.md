@@ -1,25 +1,19 @@
 ---
-title: 'Promise.all を実装してみる'
+title: 'GreatFrontend - Promise.all'
 createdAt: '2023-02-16'
 updatedAt: '2023-02-16'
-description: 'Promise.allを実装した際のメモ'
+description: 'GreatFrontend - Promise.all'
 ---
 
-## モチベーション
+## Motivation
 
-年始あたりから GreatFrontEnd の問題を解き始めている。
+「tech interview 対策」と「知見を広げる」ことを目的に、年始あたりから GreatFrontEnd の問題を解き始めている。
 
 https://www.greatfrontend.com/
 
-理由としては、
+JavaScript や TypeScript で機能を実装することは多いが、普段使っているメソッドや function が内部でどのような動きをしているのかを、車輪の再発明をする過程で理解していくのはとても楽しいし、勉強になる。
 
-- 将来クライアント側の SWE としてコーディング試験を受ける際の練習になるから
-- 楽しいから
-
-である。
-JavaScript や TypeScript で機能を実装することは多いが、普段使っているメソッドや function が内部でどのような動きをしているのかを、車輪の再発明をする過程で理解していくのはとても楽しい。
-
-## Promise.all とは
+## What is Promise.all?
 
 > このメソッドは複数のプロミスの結果を集約するのに便利です。このメソッドは、コード全体が正常に動作するために依存している複数の関連する非同期タスクがあり、コードの実行を続ける前にそれらすべてを履行させたい場合によく使われます。
 
@@ -27,7 +21,7 @@ JavaScript や TypeScript で機能を実装することは多いが、普段使
 
 > Promise.all() メソッドは、プロミスの並列処理メソッドのうちの一つです。このメソッドは、複数のプロミスの結果を集約するのに便利です。
 
-実務だと、nextjs で SSR していた時に、必要なデータを複数 api から取得する時とかに使ったことがある。あとは副業で動画アップロード機能を実装していた際に、複数ビデオを一括アップロードする時とかに使用した。
+今までの自分の経験だと、nextjs で SSR を利用してページ表示をしていた時に、必要なデータを複数の api から取得する際に、Promise.all の並列処理の恩恵を受けたことがある。あとは、副業で動画アップロード機能を実装していた際に、複数ビデオファイルを一括アップロードする時とかに使用した。
 
 https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
 
@@ -82,6 +76,6 @@ function promiseAll(arr) {
 }
 ```
 
-## 参考
+## References
 
 https://www.greatfrontend.com/questions/javascript/promise-all
