@@ -51,25 +51,24 @@ res = [promise1の返り値, promise2の返り値];
 配列の中身を一つずつ取り出し、全部の処理が終了したら resolve、何か一つでも失敗したら reject をする関数を記述する。
 
 ```javascript
-function promiseAll(arr) {
+/**
+ * @param {Array} iterable
+ * @return {Promise<Array>}
+ */
+export default function promiseAll(iterable) {
   return new Promise((resolve, reject) => {
-    const results = new Array(arr.length);
-    let unresolved = arr.length;
+    const result = new Array(iterable.length);
+    const unresolvedCount = iterable.length;
+    if (unresolvedCount == 0) resolve(result);
 
-    if (unresolved === 0) {
-      resolve(results);
-      return;
-    }
-
-    arr.forEach(async (item, index) => {
+    iterable.forEach(async (i, idx) => {
       try {
-        const value = await item;
-        results[index] = value;
-        unresolved -= 1;
-
-        if (unresolved === 0) resolve(results);
-      } catch (err) {
-        reject(err);
+        const res = await i;
+        result[idx] = res;
+        unresolvedCount -= 1;
+        if (unresolvedCount == 0) resolve(result);
+      } catch (e) {
+        reject(e);
       }
     });
   });
