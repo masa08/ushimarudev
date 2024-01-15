@@ -23,7 +23,7 @@ function increment() {
 const debouncedIncrement = debounce(increment, 100);
 ```
 
-## コード実装
+## Codes
 
 timeout 系の web api を用いて実装する。JavaScript の関数が呼び出されるコンテキストを保持するために、this を一時的に保存していることがポイント。
 
