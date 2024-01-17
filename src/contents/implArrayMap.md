@@ -5,7 +5,7 @@ updatedAt: '2023-02-21'
 description: 'GreatFrontend - Array.prototype.map'
 ---
 
-## Array.prototype.map とは
+## What is Array.prototype.map?
 
 配列に対して、引数で渡した callback を各要素を引数にして実行し、そこ結果を格納した新しい配列を返すメソッド。MDN の説明は以下。
 
@@ -26,7 +26,7 @@ const roots = numbers.map((num) => Math.sqrt(num));
 // numbers: [1, 4, 9]
 ```
 
-## コード実装
+## Codes
 
 配列の各要素に対して、callBackFn を実行し、返却値を新しい配列に挿入する。
 
@@ -68,6 +68,6 @@ Function.prototype.call についての説明は以下。
 
 https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Function/call
 
-## 参考
+## References
 
 https://www.greatfrontend.com/questions/javascript/array-map
