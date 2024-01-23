@@ -1,8 +1,8 @@
 ---
-title: 'FlutterのProviderを理解する'
+title: 'Deep dive into Provider in Flutter'
 createdAt: '2023-07-06'
 updatedAt: '2023-07-06'
-description: 'FlutterのProviderを理解する'
+description: 'Deep dive into Provider in Flutter'
 ---
 
 ## Motivation
@@ -122,7 +122,7 @@ Provider.of<T>(this, listen: false)は 内部で getElementForInheritedWidgetOfE
 
 ## Provider と InheritedWidget
 
-ChangeNotifierProvider クラスは ListenableProvider を継承しており、ListenableProvider は InheritedProvider を継承しています。以下のコンストラクタで InheritedProvider が initialize されます。
+ChangeNotifierProvider クラスは ListenableProvider を継承しており、ListenableProvider は InheritedProvider を継承しています。以下の constructor で InheritedProvider が initialize されます。
 
 ```dart
 class InheritedProvider<T> extends SingleChildStatelessWidget {
@@ -155,7 +155,7 @@ class InheritedProvider<T> extends SingleChildStatelessWidget {
 
 > A generic implementation of an [InheritedWidget]. Any descendant of this widget can obtain `value` using [Provider.of].
 
-この ChangeNotifierProvider を利用した場合、上記クラスを継承しているので、下位 widgets からのアクセスが可能となるみたいです。
+この ChangeNotifierProvider を利用した場合、InheritedProvider クラスを継承しているので、下位 widgets からのアクセスが可能となるみたいです。
 
 TODO: InheritedWidget との関係性をコードからもう少し深ぼりたいところですが、疲れたので次回時間があるときに深掘ります。\_InheritedProviderScope クラスが、直接 InheritedWidget を継承しているので、その辺を中心に追っていきたいです
 

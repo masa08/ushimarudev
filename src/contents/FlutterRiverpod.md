@@ -1,8 +1,8 @@
 ---
-title: 'FlutterのRiverpodを理解する'
+title: 'Deep dive into Riverpod in Flutter'
 createdAt: '2023-07-10'
 updatedAt: '2023-07-10'
-description: 'FlutterのRiverpodを理解する'
+description: 'Deep dive into Riverpod in Flutter'
 ---
 
 ## Motivation
@@ -24,8 +24,7 @@ Provider との違いは、以下のように説明されています。
 > At the same time, think of Riverpod as what Provider could've been if it continued to mature for a few years. Riverpod fixes various fundamental problems with Provider, such as but not limited to:
 
 - Significantly simplifying the combination of "providers". Instead of the tedious and error-prone ProxyProvider, Riverpod exposes simple yet powerful utilites such as ref.watch and ref.listen.
-- Allowing multiple "provider" to expose a value of the same type.
-  This removes the need for defining custom classes when exposing a plain int or String would work just as well.
+- Allowing multiple "provider" to expose a value of the same type. This removes the need for defining custom classes when exposing a plain int or String would work just as well.
 - Removing the need to re-define providers inside tests. With Riverpod, providers are ready to use inside tests by default.
 - Reducing the over-reliance on "scoping" to dispose objects by offering alternate ways to dispose objects (autoDispose) While powerful, scoping a provider is fairly advanced and hard to get right.
 
