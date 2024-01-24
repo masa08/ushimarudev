@@ -1,7 +1,7 @@
 ---
 title: 'Leetcode - Valid Parentheses'
-createdAt: '2023-01-24'
-updatedAt: '2023-01-24'
+createdAt: '2024-01-24'
+updatedAt: '2024-01-24'
 description: 'Leetcode - Valid Parentheses'
 ---
 
@@ -15,7 +15,7 @@ https://leetcode.com/problems/delete-node-in-a-bst/
 
 We have to traverse the given symbols, then when we encounter an open bracket, we push it to a stack, and when we encounter a close bracket and a top value in stack is a valid open bracket, we pop the last value from the stack.
 
-Before we traverse the given symbols, we define a map that has a close bracket as a key and an open bracket as a value, and an array named stack that has no elements.
+Before we traverse the given symbols, we define a map that has a close bracket as a key and an open bracket as a value for checking relationship of valid bracket pairs, and an array named stack that has no elements.
 
 Then we use a for loop to traverse symbols. If the target symbol is in the map keys, it means it is a close bracket, we pop the last element from the stack and check if these are in place by the way that we compare the last elements of stack to mapping index symbol.
 if it is true, we pop an element from the stack.
