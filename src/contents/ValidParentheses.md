@@ -9,7 +9,7 @@ description: 'Leetcode - Valid Parentheses'
 
 We have to check if the symbols appear in a valid order.
 
-https://leetcode.com/problems/delete-node-in-a-bst/
+https://leetcode.com/problems/valid-parentheses/
 
 ## Explanation
 
