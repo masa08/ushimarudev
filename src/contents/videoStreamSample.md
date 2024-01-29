@@ -1,8 +1,8 @@
 ---
-title: 'ブラウザ画面録画データをストリーミング配信をする'
+title: 'How to record your screen and broadcasting it'
 createdAt: '2023-02-18'
 updatedAt: '2023-02-19'
-description: 'ブラウザ画面録画データをストリーミング配信をする'
+description: 'How to record your screen and broadcasting it'
 ---
 
 ## モチベーション

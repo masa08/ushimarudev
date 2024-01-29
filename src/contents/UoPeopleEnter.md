@@ -1,8 +1,8 @@
 ---
-title: 'UoPeopleのComputer Schience学部へ入学した'
+title: 'Enrolling in BACHELOR OF SCIENCE IN COMPUTER SCIENCE PROGRAM at UoPeople'
 createdAt: '2023-11-15'
 updatedAt: '2023-11-15'
-description: 'UoPeopleのComputer Schience学部へ入学した'
+description: 'Enrolling in BACHELOR OF SCIENCE IN COMPUTER SCIENCE PROGRAM at UoPeople'
 ---
 
 UoPeople の Computer Science 学部へ入学しました。今回は、入学のモチベーションと入学までに必要だった作業についてまとめていきます。

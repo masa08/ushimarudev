@@ -1,8 +1,8 @@
 ---
-title: '個人ブログを開設しました'
+title: 'Launching My Personal Blog'
 createdAt: '2023-02-12'
 updatedAt: '2023-02-13'
-description: 'Next.js & tailwindcssで個人ブログを開設しました。'
+description: 'Launching My Personal Blog'
 ---
 
 Next.js & tailwindcss を使って個人ブログを開設しました。
