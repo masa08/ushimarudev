@@ -11,10 +11,11 @@ import { Posts } from '@/types/post';
 
 type Props = {
   posts: Posts[];
+  hasMore: boolean;
 };
 
 const TopTemplate: React.FC<Props> = (props) => {
-  const { posts } = props;
+  const { posts, hasMore } = props;
   return (
     <Container>
       <Flex>
@@ -25,7 +26,7 @@ const TopTemplate: React.FC<Props> = (props) => {
           <Contacts />
         </SideContents>
         <MainContents>
-          <PostCardList posts={posts} />
+          <PostCardList posts={posts} hasMore={hasMore} />
         </MainContents>
       </Flex>
     </Container>
