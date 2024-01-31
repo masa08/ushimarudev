@@ -3,7 +3,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 
 // TODO: Get data from api
-export async function getPosts(page: string | undefined) {
+async function getPosts(page: string | undefined) {
   let currentOffset = 0;
   const limit = 10;
   const pageInt = parseInt(page ?? '1');
