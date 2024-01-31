@@ -1,4 +1,3 @@
-import { getPosts } from '@/app/page';
 import PostTemplate from '@/templates/Post';
 import fs from 'fs';
 import matter from 'gray-matter';
@@ -13,14 +12,6 @@ async function getPost(slug: string) {
   const contentHtml = processedContent.toString();
 
   return { metaData: data, content: linkifyHtml(contentHtml) };
-}
-
-export async function generateStaticParams() {
-  const posts = await getPosts();
-
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
 }
 
 const Post = async ({ params }: { params: { slug: string } }) => {
