@@ -1,4 +1,3 @@
-import { getPosts } from '@/app/page';
 import PostTemplate from '@/templates/Post';
 import fs from 'fs';
 import matter from 'gray-matter';
@@ -13,6 +12,24 @@ async function getPost(slug: string) {
   const contentHtml = processedContent.toString();
 
   return { metaData: data, content: linkifyHtml(contentHtml) };
+}
+
+async function getPosts() {
+  const files = fs.readdirSync('src/contents');
+
+  const allPosts = files.map((fileName) => {
+    const slug = fileName.replace(/\.md$/, '');
+    const fileContent = fs.readFileSync(`src/contents/${fileName}`, 'utf-8');
+
+    const { data } = matter(fileContent);
+    return { metaData: data, slug };
+  });
+
+  allPosts.sort(function (a, b) {
+    return a.metaData.createdAt < b.metaData.createdAt ? 1 : -1;
+  });
+
+  return allPosts;
 }
 
 export async function generateStaticParams() {

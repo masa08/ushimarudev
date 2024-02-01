@@ -3,7 +3,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 
 // TODO: Get data from api
-export async function getPosts() {
+async function getPosts() {
   const files = fs.readdirSync('src/contents');
 
   const allPosts = files.map((fileName) => {
