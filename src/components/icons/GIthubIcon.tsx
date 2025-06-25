@@ -1,21 +1,16 @@
-import { GitHub } from 'iconoir-react';
+import { GitHub } from 'iconoir-react'
 
 type Props = {
-  className?: string;
-};
+  className?: string
+}
 
 const GithubIcon: React.FC<Props> = (props) => {
-  const { className } = props;
+  const { className } = props
 
   return (
-    <a
-      href="https://github.com/masa08"
-      className={className}
-      target="_blank"
-      rel="noreferrer"
-    >
+    <a href="https://github.com/masa08" className={className} target="_blank" rel="noreferrer">
       <GitHub />
     </a>
-  );
-};
-export default GithubIcon;
+  )
+}
+export default GithubIcon

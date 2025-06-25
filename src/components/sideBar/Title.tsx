@@ -1,8 +1,8 @@
-import React from 'react';
+import type React from 'react'
 
 type Props = {
-  title: string;
-};
+  title: string
+}
 
 const SidebarTitle: React.FC<Props> = ({ title }) => {
   return (
@@ -10,6 +10,6 @@ const SidebarTitle: React.FC<Props> = ({ title }) => {
       <h2 className="text-xl">{title}</h2>
       <hr className="my-3 border-gray-200 dark:border-gray-700" />
     </>
-  );
-};
-export default SidebarTitle;
+  )
+}
+export default SidebarTitle

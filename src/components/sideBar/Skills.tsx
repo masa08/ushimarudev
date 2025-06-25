@@ -1,11 +1,11 @@
-import React from 'react';
-import SidebarTitle from './Title';
+import type React from 'react'
+import SidebarTitle from './Title'
 
 type Props = {
-  className?: string;
-};
+  className?: string
+}
 
-const Skills: React.FC<Props> = (props) => {
+const Skills: React.FC<Props> = (_props) => {
   return (
     <div className="mb-8">
       <SidebarTitle title="Skills" />
@@ -13,6 +13,6 @@ const Skills: React.FC<Props> = (props) => {
         <p className="mt-5">JavaScript, TypeScript, Dart, React, Flutter</p>
       </div>
     </div>
-  );
-};
-export default Skills;
+  )
+}
+export default Skills

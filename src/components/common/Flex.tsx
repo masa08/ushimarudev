@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react'
 
 const Flex = ({ children }: { children: ReactNode }) => {
-  return <div className="md:flex">{children}</div>;
-};
+  return <div className="md:flex">{children}</div>
+}
 
-export default Flex;
+export default Flex

@@ -1,12 +1,12 @@
-import React from 'react';
-import Image from 'next/image';
-import SidebarTitle from './Title';
+import Image from 'next/image'
+import type React from 'react'
+import SidebarTitle from './Title'
 
 type Props = {
-  className?: string;
-};
+  className?: string
+}
 
-const Profile: React.FC<Props> = (props) => {
+const Profile: React.FC<Props> = (_props) => {
   return (
     <div className="mb-8">
       <SidebarTitle title="Profile" />
@@ -24,6 +24,6 @@ const Profile: React.FC<Props> = (props) => {
         </p>
       </div>
     </div>
-  );
-};
-export default Profile;
+  )
+}
+export default Profile

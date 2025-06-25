@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react';
+import type { ReactNode } from 'react'
 
 const SideContents = ({ children }: { children: ReactNode }) => {
-  return <aside className="md:w-1/4 p-5">{children}</aside>;
-};
+  return <aside className="md:w-1/4 p-5">{children}</aside>
+}
 
-export default SideContents;
+export default SideContents

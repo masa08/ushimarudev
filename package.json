@@ -6,15 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "yarn biome lint ./src",
+    "format": "yarn biome format --write ./src",
+    "check": "yarn biome check --write ./src"
   },
   "dependencies": {
     "@next/font": "14.1.0",
     "@types/node": "18.13.0",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
-    "eslint": "8.33.0",
-    "eslint-config-next": "14.1.0",
     "gray-matter": "^4.0.3",
     "iconoir-react": "^6.2.1",
     "linkify-html": "^4.1.0",
@@ -28,6 +28,7 @@
     "typescript": "4.9.5"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.0.5",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",

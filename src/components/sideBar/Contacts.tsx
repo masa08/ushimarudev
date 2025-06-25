@@ -1,14 +1,14 @@
-import React from 'react';
-import GithubIcon from '../icons/GIthubIcon';
-import LinkedInIcon from '../icons/LinkedInIcon';
-import TwitterIcon from '../icons/TwitterIcon';
-import SidebarTitle from './Title';
+import type React from 'react'
+import GithubIcon from '../icons/GIthubIcon'
+import LinkedInIcon from '../icons/LinkedInIcon'
+import TwitterIcon from '../icons/TwitterIcon'
+import SidebarTitle from './Title'
 
 type Props = {
-  className?: string;
-};
+  className?: string
+}
 
-const Contacts: React.FC<Props> = (props) => {
+const Contacts: React.FC<Props> = (_props) => {
   return (
     <div className="mb-8">
       <SidebarTitle title="Contacts" />
@@ -18,6 +18,6 @@ const Contacts: React.FC<Props> = (props) => {
         <LinkedInIcon className="mr-2" />
       </div>
     </div>
-  );
-};
-export default Contacts;
+  )
+}
+export default Contacts

@@ -1,11 +1,11 @@
-import { LinkedIn } from 'iconoir-react';
+import { LinkedIn } from 'iconoir-react'
 
 type Props = {
-  className?: string;
-};
+  className?: string
+}
 
 const LinkedInIcon: React.FC<Props> = (props) => {
-  const { className } = props;
+  const { className } = props
 
   return (
     <a
@@ -16,6 +16,6 @@ const LinkedInIcon: React.FC<Props> = (props) => {
     >
       <LinkedIn />
     </a>
-  );
-};
-export default LinkedInIcon;
+  )
+}
+export default LinkedInIcon

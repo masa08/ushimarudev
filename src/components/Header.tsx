@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { ChangeThemeButton } from './buttons/ChangeThemeButton';
+import Link from 'next/link'
+import { ChangeThemeButton } from './buttons/ChangeThemeButton'
 
 const Header = () => {
   return (
@@ -16,7 +16,7 @@ const Header = () => {
         {/* TODO: 言語切り替え */}
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

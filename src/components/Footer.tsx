@@ -1,7 +1,6 @@
-import { GitHub, LinkedIn, Twitter } from 'iconoir-react';
-import GithubIcon from './icons/GIthubIcon';
-import LinkedInIcon from './icons/LinkedInIcon';
-import TwitterIcon from './icons/TwitterIcon';
+import GithubIcon from './icons/GIthubIcon'
+import LinkedInIcon from './icons/LinkedInIcon'
+import TwitterIcon from './icons/TwitterIcon'
 
 const Footer = () => {
   return (
@@ -19,7 +18,7 @@ const Footer = () => {
         </li>
       </ul>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

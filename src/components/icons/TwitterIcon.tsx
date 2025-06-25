@@ -1,21 +1,16 @@
-import { Twitter } from 'iconoir-react';
+import { Twitter } from 'iconoir-react'
 
 type Props = {
-  className?: string;
-};
+  className?: string
+}
 
 const TwitterIcon: React.FC<Props> = (props) => {
-  const { className } = props;
+  const { className } = props
 
   return (
-    <a
-      href="https://twitter.com/ushimaru08"
-      className={className}
-      target="_blank"
-      rel="noreferrer"
-    >
+    <a href="https://twitter.com/ushimaru08" className={className} target="_blank" rel="noreferrer">
       <Twitter />
     </a>
-  );
-};
-export default TwitterIcon;
+  )
+}
+export default TwitterIcon

@@ -1,11 +1,11 @@
-import React from 'react';
-import SidebarTitle from './Title';
+import type React from 'react'
+import SidebarTitle from './Title'
 
 type Props = {
-  className?: string;
-};
+  className?: string
+}
 
-const Hobby: React.FC<Props> = (props) => {
+const Hobby: React.FC<Props> = (_props) => {
   return (
     <div className="mb-8">
       <SidebarTitle title="Hobby" />
@@ -13,6 +13,6 @@ const Hobby: React.FC<Props> = (props) => {
         <p className="mt-5">Training, Anime, Travelling</p>
       </div>
     </div>
-  );
-};
-export default Hobby;
+  )
+}
+export default Hobby
