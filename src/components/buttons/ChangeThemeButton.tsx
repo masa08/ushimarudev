@@ -10,17 +10,25 @@ export const ChangeThemeButton: React.FC = () => {
 
   useEffect(() => setMounted(true), [])
 
-  if (typeof window === 'undefined') return null
-
-  return (
-    <>
+  if (!mounted) {
+    return (
       <button
         aria-label="DarkModeToggle"
         type="button"
-        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        disabled
       >
-        {mounted && <>{theme === 'dark' ? <HalfMoon /> : <SunLight />}</>}
+        <SunLight />
       </button>
-    </>
+    )
+  }
+
+  return (
+    <button
+      aria-label="DarkModeToggle"
+      type="button"
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+    >
+      {theme === 'dark' ? <HalfMoon /> : <SunLight />}
+    </button>
   )
 }
